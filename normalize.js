@@ -3,7 +3,7 @@
 exports.processObject = (type, item, createContentDigest) => {
   const id = item._id;
   delete item._id;
-  convertNumberValuesToString(item)
+  convertNumberValuesToString(item);
   const nodeMetadata = {
     id,
     parent: null,
